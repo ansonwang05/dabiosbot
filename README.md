@@ -22,20 +22,44 @@ Make sure to update .gitignore
 /__pycache__
 ```
 
-Running the program: 
+## Before Running
+
+Make sure you activate the python virtual environment
+and confirm that it is activated
 
 For macOS / Linux: 
 
 ```bash
-python3 filename.py
+source .venv/bin/activate
+which python
+```
+
+For Windows:
+
+```bash
+.venv/Scripts/activate
+where python
+```
+
+When you want to switch projects or leave: 
+
+```bash
+deactivate
+```
+
+## Running Files
+
+For macOS / Linux: 
+
+```bash
+python3 main.py
 ```
 
 For Windows: 
 
 ```bash
-python filename.py
+python main.py
 ```
-
 
 [^1]: May need to run 'sudo apt-get install python3-venv' first on Debain-based OSs
 [^2]: Can also use 'py -3 -m venv .venv'
